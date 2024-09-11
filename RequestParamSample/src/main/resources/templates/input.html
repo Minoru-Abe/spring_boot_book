@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>RequestParam</title>
+</head>
+<body>
+	<h1>Input view</h1>
+	<hr>
+	<form action="./output.html" th:action="@{/result}" method="get">
+		<label for="get-value">Input:</label>
+		<input type="text" id="get-value" name="val">
+		<button type="submit">SEND GET</button>
+	</form>
+	<br>
+	<form action="./output.html" th:action="@{/result}" method="post">
+		<label for="post-value">Input:</label>
+		<input type="text" id="post-value" name="val">
+		<button type="submit">SEND POST</button>
+	</form>
+</body>
+</html>
